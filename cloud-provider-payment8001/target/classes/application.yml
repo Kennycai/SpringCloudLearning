@@ -6,9 +6,9 @@ spring:
     name: cloud-payment-service
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
-    url: jdbc:mysql://localhost:3306/springcloud_learning?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false
+    url: jdbc:mysql://localhost:3306/springcloud_learning?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true
     username: root
-    password: admin
+    password: 123456
 
 eureka:
   client:
@@ -17,7 +17,7 @@ eureka:
     # 是否从Eureka抓取已有的注册信息，默认为true。单节点无所谓，集群必须设置为true才能配合ribbon使用负载均衡
     fetchRegistry: true
     service-url:
-      defaultZone: http://localhost:7001/eureka
+      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
 mybatis:
   mapperLocations: classpath:mapper/*.xml
   type-aliases-package: com.learning.springcloud.entities
