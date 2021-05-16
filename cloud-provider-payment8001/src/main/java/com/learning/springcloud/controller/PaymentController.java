@@ -41,4 +41,14 @@ public class PaymentController {
         }
         return discoveryClient;
     }
+
+    @GetMapping(value = "/payment/timeout")
+    public CommonResult<Payment> timeout() {
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return new CommonResult<>(200, "success，端口：" + port);
+    }
 }
