@@ -9,6 +9,9 @@ import org.springframework.web.client.RestTemplate;
 @Configuration
 public class FeignConfig {
 
+    /**
+     * 添加OpenFeign日志打印级别，默认 NONE
+     */
     @Bean
     Logger.Level feignLoggerLevel() {
         return Logger.Level.FULL;
