@@ -1,0 +1,18 @@
+server:
+  port: 8004
+
+spring:
+  application:
+    name: zookeeper-payment-service
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/springcloud_learning?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: 123456
+  cloud:
+    zookeeper:
+      connect-string: localhost:21810
+
+mybatis:
+  mapperLocations: classpath:mapper/*.xml
+  type-aliases-package: com.learning.springcloud.entities

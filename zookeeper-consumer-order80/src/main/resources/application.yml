@@ -1,0 +1,9 @@
+server:
+  port: 80
+
+spring:
+  application:
+    name: zookeeper-consumer-order
+  cloud:
+    zookeeper:
+      connect-string: localhost:21810
