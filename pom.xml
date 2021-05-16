@@ -14,8 +14,8 @@
         <module>cloud-api-commons</module>
         <module>cloud-eureka-server7001</module>
         <module>cloud-eureka-server7002</module>
-        <module>zookeeper-provider-payment8004</module>
-        <module>zookeeper-consumer-order80</module>
+        <module>cloud-provider-zookeeper-payment8004</module>
+        <module>cloud-consumer-zookeeper-order80</module>
     </modules>
     <packaging>pom</packaging>
 
