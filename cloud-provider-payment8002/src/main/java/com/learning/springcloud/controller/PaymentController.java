@@ -4,6 +4,7 @@ import com.learning.springcloud.entities.CommonResult;
 import com.learning.springcloud.entities.Payment;
 import com.learning.springcloud.service.PaymentService;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -14,6 +15,9 @@ public class PaymentController {
     @Resource
     private PaymentService paymentService;
 
+    @Value("${server.port}")
+    private String port;
+
     @PostMapping(value = "/payment/create")
     public CommonResult<Integer> create(@RequestBody Payment payment) {
         return new CommonResult<>(200, "success", paymentService.create(payment));
@@ -21,6 +25,6 @@ public class PaymentController {
 
     @GetMapping(value = "/payment/get/{id}")
     public CommonResult<Payment> getPaymentById(@PathVariable Integer id) {
-        return new CommonResult<>(200, "success", paymentService.getPaymentById(Long.valueOf(id)));
+        return new CommonResult<>(200, "success，端口：" + port, paymentService.getPaymentById(Long.valueOf(id)));
     }
 }
