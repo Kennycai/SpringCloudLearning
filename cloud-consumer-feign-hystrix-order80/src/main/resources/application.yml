@@ -1,0 +1,27 @@
+server:
+  port: 80
+
+spring:
+  application:
+    name: feign-order-service
+
+eureka:
+  client:
+    # 表示是否将自己注册进EurekaServer，默认为true
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/
+
+#添加ribbon超时时间
+ribbon:
+  ReadTimeout: 5000
+  ConnectTimeout: 5000
+#
+#logging:
+#  level:
+#    com.learning.springcloud.service.PaymentService: debug
+
+# 开启 feign 的 hystrix 支持
+feign:
+  hystrix:
+    enabled: true
