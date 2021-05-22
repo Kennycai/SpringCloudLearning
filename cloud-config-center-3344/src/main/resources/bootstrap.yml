@@ -1,0 +1,31 @@
+server:
+  port: 3344
+spring:
+  application:
+    name: cloud-config-center
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:******/cloud-config.git #github仓库上面的git仓库名字
+          search-paths:
+            - cloud-config
+      # 默认读取分支
+      label: master
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: admin
+    password: admin
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka # 注册进eureka
+#暴露actuator端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'bus-refresh'  # 凡是暴露监控、刷新都要有actuator依赖，bus-refresh就是actuator的刷新操作
