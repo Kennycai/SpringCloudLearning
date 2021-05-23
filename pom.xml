@@ -10,6 +10,7 @@
 
     <modules>
         <module>cloud-provider-payment8001</module>
+        <module>cloud-provider-payment8002</module>
         <module>cloud-comsumer-order80</module>
         <module>cloud-api-commons</module>
         <module>cloud-eureka-server7001</module>
@@ -22,6 +23,8 @@
         <module>cloud-consumer-hystrix-dashboard9001</module>
         <module>cloud-gateway-gateway9527</module>
         <module>cloud-config-center-3344</module>
+        <module>cloud-config-client-3355</module>
+        <module>cloud-config-client-3366</module>
     </modules>
     <packaging>pom</packaging>
 
