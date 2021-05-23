@@ -4,13 +4,17 @@ server:
 spring:
   application:
     name: feign-order-service
-
+  zipkin:
+    base-url: http://localhost:9411
+    sleuth:
+      sampler:
+        probability: 1
 eureka:
   client:
     # 表示是否将自己注册进EurekaServer，默认为true
     register-with-eureka: false
     service-url:
-      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7001.com:7002/eureka/
+      defaultZone: http://eureka7001.com:7001/eureka/ #,http://eureka7001.com:7002/eureka/
 
 #添加ribbon超时时间
 ribbon:

@@ -17,6 +17,11 @@
     </properties>
 
     <dependencies>
+        <!-- zipkin 链路监控 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-zipkin</artifactId>
+        </dependency>
         <!-- openfeign-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
