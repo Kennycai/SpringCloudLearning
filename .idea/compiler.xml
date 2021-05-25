@@ -7,27 +7,31 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="cloud-consumer-zookeeper-order80" />
-        <module name="cloudalibaba-config-nacos-client3377" />
-        <module name="cloud-provider-payment8002" />
         <module name="cloud-eureka-server7001" />
-        <module name="cloud-api-commons" />
-        <module name="cloud-provider-payment8001" />
         <module name="cloud-eureka-server7002" />
         <module name="cloudalibaba-consumer-nacos-order84" />
         <module name="cloud-consumer-feign-hystrix-order80" />
-        <module name="cloud-consumer-hystrix-dashboard9001" />
+        <module name="cloudalibaba-consumer-nacos-order85" />
         <module name="cloud-config-center-3344" />
+        <module name="cloud-provider-hystrix-payment8001" />
+        <module name="cloud-config-client-3366" />
+        <module name="cloud-consumer-feign-order80" />
+        <module name="cloud-consumer-zookeeper-order80" />
+        <module name="cloudalibaba-config-nacos-client3377" />
+        <module name="cloud-provider-payment8002" />
+        <module name="cloud-api-commons" />
+        <module name="cloud-provider-payment8001" />
+        <module name="cloud-consumer-hystrix-dashboard9001" />
+        <module name="cloudalibaba-provider-payment9004" />
         <module name="cloud-provider-zookeeper-payment8004" />
+        <module name="cloudalibaba-provider-payment9003" />
         <module name="cloudalibaba-provider-payment9002" />
         <module name="cloudalibaba-provider-payment9001" />
         <module name="cloud-comsumer-order80" />
         <module name="cloud-gateway-gateway9527" />
         <module name="cloudalibaba-consumer-nacos-order83" />
-        <module name="cloud-provider-hystrix-payment8001" />
+        <module name="cloudalibaba-sentinel-service8401" />
         <module name="cloud-config-client-3355" />
-        <module name="cloud-config-client-3366" />
-        <module name="cloud-consumer-feign-order80" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -50,8 +54,12 @@
       <module name="cloudalibaba-config-nacos-client3377" target="8" />
       <module name="cloudalibaba-consumer-nacos-order83" target="8" />
       <module name="cloudalibaba-consumer-nacos-order84" target="8" />
+      <module name="cloudalibaba-consumer-nacos-order85" target="8" />
       <module name="cloudalibaba-provider-payment9001" target="8" />
       <module name="cloudalibaba-provider-payment9002" target="8" />
+      <module name="cloudalibaba-provider-payment9003" target="8" />
+      <module name="cloudalibaba-provider-payment9004" target="8" />
+      <module name="cloudalibaba-sentinel-service8401" target="8" />
       <module name="SpringCloud" target="8" />
     </bytecodeTargetLevel>
   </component>
