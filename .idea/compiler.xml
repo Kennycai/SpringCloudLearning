@@ -9,9 +9,10 @@
         <outputRelativeToContentRoot value="true" />
         <module name="cloud-eureka-server7001" />
         <module name="cloud-eureka-server7002" />
+        <module name="seata-order-service2001" />
         <module name="cloudalibaba-consumer-nacos-order84" />
-        <module name="cloud-consumer-feign-hystrix-order80" />
         <module name="cloudalibaba-consumer-nacos-order85" />
+        <module name="cloud-consumer-feign-hystrix-order80" />
         <module name="cloud-config-center-3344" />
         <module name="cloud-provider-hystrix-payment8001" />
         <module name="cloud-config-client-3366" />
@@ -23,13 +24,15 @@
         <module name="cloud-provider-payment8001" />
         <module name="cloud-consumer-hystrix-dashboard9001" />
         <module name="cloudalibaba-provider-payment9004" />
-        <module name="cloud-provider-zookeeper-payment8004" />
         <module name="cloudalibaba-provider-payment9003" />
+        <module name="cloud-provider-zookeeper-payment8004" />
         <module name="cloudalibaba-provider-payment9002" />
         <module name="cloudalibaba-provider-payment9001" />
-        <module name="cloud-comsumer-order80" />
         <module name="cloud-gateway-gateway9527" />
         <module name="cloudalibaba-consumer-nacos-order83" />
+        <module name="cloud-comsumer-order80" />
+        <module name="seata-account-service2003" />
+        <module name="seata-storage-service2002" />
         <module name="cloudalibaba-sentinel-service8401" />
         <module name="cloud-config-client-3355" />
       </profile>
@@ -60,6 +63,9 @@
       <module name="cloudalibaba-provider-payment9003" target="8" />
       <module name="cloudalibaba-provider-payment9004" target="8" />
       <module name="cloudalibaba-sentinel-service8401" target="8" />
+      <module name="seata-account-service2003" target="8" />
+      <module name="seata-order-service2001" target="8" />
+      <module name="seata-storage-service2002" target="8" />
       <module name="SpringCloud" target="8" />
     </bytecodeTargetLevel>
   </component>
